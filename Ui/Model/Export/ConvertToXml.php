@@ -37,7 +37,7 @@ class ConvertToXml extends \Magento\Ui\Model\Export\ConvertToXml
 
         /** @var DocumentInterface[] $searchResultItems */
         $searchResultItems = $searchResult->getItems();
-var_dump($searchResultItems);
+
         $this->prepareItems($component->getName(), $searchResultItems);
 
 
