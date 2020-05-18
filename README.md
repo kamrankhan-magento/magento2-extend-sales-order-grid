@@ -1,13 +1,6 @@
 # Magento 2 Extend admin sales order grid
 
-Whit this module you can customize the Facebook Open Graph data for products in your Magento 2 store
-In Magento 2 there is already the Facebook open graph for the product, so you can use this extension
-if you want to customize the default magento functionally.
-
-If this extension is disabled, magento load the default Facebook open graph module.
-
-You can enable or disable this module in the admin area `WS Extensions => Facebook Open Graph`
-
+Whit this module you can extend the sales order admin grid and the relative Csv export with the order's comment.
 ## Setup
 
 You can install this module via Composer or a manual setup.
