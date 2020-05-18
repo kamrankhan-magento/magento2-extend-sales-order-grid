@@ -35,15 +35,6 @@ class Comment extends Column
     {
         if (isset($dataSource['data']['items'])) {
             foreach ($dataSource['data']['items'] as & $item) {
-
-                //$order  = $this->_orderRepository->get($item["entity_id"]);
-                //$status = $order->getStatusHistoryCollection();
-                /*$comment = '';
-                foreach ($order->getStatusHistoryCollection() as $status) {
-                    $comment .= strlen($comment)>0 ? ' - ' : '';
-                    $comment .= $status->getCreatedAt() .': '. $status->getComment();
-                }*/
-
                 $comment = $this->_orderData->getOrderComment($item["entity_id"]);
                 // $this->getData('name') returns the name of the column so in this case it would return comment
                 $item[$this->getData('name')] = $comment;
